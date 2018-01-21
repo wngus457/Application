@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bustercall.MainActivity">
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="20dp"
+        android:background="#00000000">
+
+        <TextView
+            android:id="@+id/gpstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="0dp"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.bustercall.MapsActivity" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentTop="true">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_view_headline_black_24dp"
+                android:onClick="menubutton"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#646464"/>
+            <Button
+                android:id="@+id/button1122"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#646464"
+                android:layout_marginRight="4dp"
+                android:onClick="policebutton"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:text="112긴급"
+                android:textColor="#eb0000"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="60dp"
+                />
+
+            <Button
+                android:id="@+id/button1192"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:background="#646464"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:textColor="#eb0000"
+                android:text="119긴급"
+                android:onClick="firestationbutton"
+                android:layout_marginTop="15dp"
+                />
+            <Button
+                android:id="@+id/smssendbutton2"
+                android:onClick="smsButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="4dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:text="SMS전송"
+                android:background="#646464"
+                android:layout_marginTop="15dp"
+
+                />
+
+            <Button
+                android:id="@+id/kakaotalkbutton2"
+                android:onClick="kakaoButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#646464"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:layout_marginRight="4dp"
+                android:text="카카오톡전송"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="15dp"
+                />
+            <Button
+                android:id="@+id/gps"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:onClick="barbuttonclicked"
+                android:scaleType="centerCrop"
+                android:text="현위치"
+                android:background="#646464"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginTop="60dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

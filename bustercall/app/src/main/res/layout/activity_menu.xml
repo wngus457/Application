@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop"
+            android:onClick="backbutton"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="메뉴"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_marginLeft="110dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#aaaaaa"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:onClick="help"
+            android:layout_marginLeft="10dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableLeft="@drawable/ic_live_help_black_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableStart="@drawable/ic_live_help_black_24dp"
+            android:gravity="center"
+            android:text="도움말"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:onClick="provision"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableLeft="@drawable/ic_description_black_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableStart="@drawable/ic_description_black_24dp"
+            android:gravity="center"
+            android:text="이용약관"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:onClick="version"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableLeft="@drawable/ic_error_black_24dp"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableStart="@drawable/ic_error_black_24dp"
+            android:gravity="center"
+            android:text="버전"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#aaaaaa">
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:src="@drawable/gcompany"
+            android:scaleType="fitXY"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+</LinearLayout>

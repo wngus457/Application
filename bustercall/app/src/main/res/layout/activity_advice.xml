@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop"
+            android:onClick="backbutton2"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="도움말"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:layout_marginLeft="100dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="220dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/helpmain"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:text="@string/advice"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/advicedetailed"/>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gcompany"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
